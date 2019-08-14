@@ -1,0 +1,8 @@
+Acquire::http::proxy {
+    linux.pleiade.edf.fr DIRECT;
+};
+#Acquire::http::proxy "http://proxypac.edf.fr:3128";
+#Acquire::https::proxy "http://proxypac.edf.fr:3128";
+#Acquire::http::proxy "http://authnoe.edf.fr:3128";
+#Acquire::https::proxy "http://authnoe.edf.fr:3128";
+

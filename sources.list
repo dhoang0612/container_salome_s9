@@ -1,0 +1,33 @@
+# scibian
+# MISE A JOUR AUTOMATIQUE : 2019-08-06T09:40:30.671254Z
+
+
+##################################################################################
+# Dépots debian de base 
+##################################################################################
+
+###############| AVEC PROXY |###############
+#deb http://deb.debian.org/debian stretch main
+#deb-src http://deb.debian.org/debian stretch main
+#deb http://deb.debian.org/debian-security/ stretch/updates main
+#deb-src http://deb.debian.org/debian-security/ stretch/updates main
+#deb http://deb.debian.org/debian stretch-updates main
+#deb-src http://deb.debian.org/debian stretch-updates main
+############################################
+
+
+###############| SANS PROXY |###############
+deb http://dist.calibre.edf.fr/scibian9 stretch main contrib non-free
+deb http://dist.calibre.edf.fr/scibian9 stretch-updates main contrib non-free
+deb http://dist.calibre.edf.fr/scibian9 stretch/updates main contrib non-free
+deb http://dist.calibre.edf.fr/scibian9 scibian9 main contrib non-free
+############################################
+
+
+##################################################################################
+# Dépots EDF
+##################################################################################
+deb http://dist.calibre.edf.fr/scibian9-applis-public scibian9 main
+deb http://dist.calibre.edf.fr/scibian9 scibian9-edf main contrib non-free
+#deb http://dist.calibre.edf.fr/scibian9-applis-public scibian9 main
+#deb https://dist.calibre.edf.fr/scibian9-applis-restreint scibian9 main
