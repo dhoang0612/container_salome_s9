@@ -7,6 +7,7 @@ sources.list /home
 99edf /home
 99edfproxy /home
 locale.gen /home
+scibian-auto-keyring.pub /home
 
 %post
 
@@ -23,7 +24,7 @@ cat >> /etc/apt/sources.list << EOF
 deb http://scibian.org/repo/ scibian9 main
 EOF
 
-wget https://scibian.org/repo/scibian-auto-keyring.pub -O- | apt-key add -
+apt-key add /home/scibian-auto-keyring.pub
 
 cat >> /etc/apt/preferences.d/00scibian << EOF
 Package: *
