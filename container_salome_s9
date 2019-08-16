@@ -1,6 +1,5 @@
-BootStrap: debootstrap
-OSVersion: stretch
-MirrorURL: http://ftp.fr.debian.org/debian/
+Bootstrap: docker
+From: debian:9
 
 %files
 
