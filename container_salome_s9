@@ -20,7 +20,7 @@ chmod 755 /scratch
 sed -i 's/ main/ main contrib non-free/' /etc/apt/sources.list
 
 cat >> /etc/apt/sources.list << EOF
-deb http://scibian.org/repo/ scibian8 main
+deb http://scibian.org/repo/ scibian9 main
 deb http://dist.calibre.edf.fr/scibian9-applis-public scibian9 main
 deb http://dist.calibre.edf.fr/scibian9 stretch main contrib non-free
 deb http://dist.calibre.edf.fr/scibian9 stretch-updates main contrib non-free
