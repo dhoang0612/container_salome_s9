@@ -21,12 +21,6 @@ sed -i 's/ main/ main contrib non-free/' /etc/apt/sources.list
 
 cat >> /etc/apt/sources.list << EOF
 deb http://scibian.org/repo/ scibian9 main
-deb http://dist.calibre.edf.fr/scibian9-applis-public scibian9 main
-deb http://dist.calibre.edf.fr/scibian9 stretch main contrib non-free
-deb http://dist.calibre.edf.fr/scibian9 stretch-updates main contrib non-free
-deb http://dist.calibre.edf.fr/scibian9 stretch/updates main contrib non-free
-deb http://dist.calibre.edf.fr/scibian9 scibian9 main contrib non-free
-deb http://dist.calibre.edf.fr/scibian9 scibian9-edf main contrib non-free
 EOF
 
 wget https://scibian.org/repo/scibian-auto-keyring.pub -O- | apt-key add -
@@ -52,8 +46,3 @@ rm /home/locale.gen
 %post
 
 locale-gen
-
-%post
-
-apt-get -y install salome-prerequisites-9.3.0
-apt-get -y install salome-prerequisites-9.4.0
