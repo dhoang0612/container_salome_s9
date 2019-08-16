@@ -1,6 +1,5 @@
-BootStrap: debootstrap
-OSVersion: stretch
-MirrorURL: http://ftp.fr.debian.org/debian/
+Bootstrap: docker
+From: debian:9
 
 %files
 
@@ -33,7 +32,13 @@ Pin: release o=Scibian
 Pin-Priority: 1001
 EOF
 
-apt-get update && apt-get -y install scibian-standard scibian-desktop
+apt-get update
+
+apt-get -y install scibian-kernel-default
+
+apt-get -y install scibian-standard 
+
+apt-get -y install scibian-desktop
 
 %post
 
