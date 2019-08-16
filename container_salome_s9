@@ -32,10 +32,7 @@ Pin: release o=Scibian
 Pin-Priority: 1001
 EOF
 
-
-apt-get update
-
-apt-get -y install scibian-desktop
+apt-get update && apt-get -y install scibian-standard
 
 %post
 
