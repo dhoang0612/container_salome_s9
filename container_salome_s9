@@ -35,6 +35,7 @@ EOF
 
 apt-get update
 
+apt-get -y install scibian-kernel-4.9
 apt-get -y install scibian-kernel-default
 
 apt-get -y install scibian-standard 
