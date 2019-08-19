@@ -13,7 +13,6 @@ scibian-auto-keyring.pub /home
 %post
 
 apt-get update && apt-get -y install build-essential wget
-apt-get -y install apt-utils
 
 mkdir /local00
 chmod 755 /local00
@@ -21,7 +20,7 @@ chmod 755 /local00
 sed -i 's/ main/ main contrib non-free/' /etc/apt/sources.list
 
 cat >> /etc/apt/sources.list << EOF
-deb http://scibian.org/repo/ scibian9 main
+deb http://scibian.org/repo/ scibian8 main
 EOF
 
 apt-key add /home/scibian-auto-keyring.pub
