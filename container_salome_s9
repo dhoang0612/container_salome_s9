@@ -13,6 +13,7 @@ scibian-auto-keyring.pub /home
 %post
 
 apt-get update && apt-get -y install build-essential wget
+apt-get -y install --no-install-recommends apt-utils
 
 mkdir /local00
 chmod 755 /local00
