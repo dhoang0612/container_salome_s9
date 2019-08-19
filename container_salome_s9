@@ -35,7 +35,7 @@ EOF
 
 apt-get update
 
-apt-get -y install linux-headers-4.9.0-9-amd64
+apt-get -y install linux-headers-4.9.0-3-amd64
 apt-get -y install scibian-kernel-4.9
 apt-get -y install scibian-kernel-default
 
