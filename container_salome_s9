@@ -15,9 +15,7 @@ scibian-auto-keyring.pub /home
 apt-get update && apt-get -y install build-essential wget
 
 mkdir /local00
-mkdir /scratch
 chmod 755 /local00
-chmod 755 /scratch
 
 sed -i 's/ main/ main contrib non-free/' /etc/apt/sources.list
 
@@ -35,7 +33,7 @@ EOF
 
 apt-get update
 
-apt-get -y install linux-headers-4.9.0-3-amd64
+apt-get -y install linux-headers-4.9.0-9-amd64
 apt-get -y install scibian-kernel-4.9
 apt-get -y install scibian-kernel-default
 
