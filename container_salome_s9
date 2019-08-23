@@ -20,7 +20,7 @@ chmod 755 /local00
 sed -i 's/ main/ main contrib non-free/' /etc/apt/sources.list
 
 cat >> /etc/apt/sources.list << EOF
-deb http://scibian.org/repo/ scibian8 main
+deb http://scibian.org/repo/ scibian9 main
 EOF
 
 apt-key add /home/scibian-auto-keyring.pub
